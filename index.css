@@ -1,3 +1,55 @@
-#heading{
-    color: rebeccapurple;
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    height: 100px;
+}
+.logo{
+    width: 57px;
+    height: 57px;
+    border: 2px solid white;
+    border-radius: 48px;
+
+}
+.nav-items ul {
+    font-size: 24px;
+    display: flex;
+    padding-right: 10rem;
+    list-style-type: none;
+}
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
+}
+.search{
+    padding: 10px;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.res-card{
+    word-break: break-all;
+    padding: 5px;;
+    width: 170px;
+    height: 265px;
+    margin: 5px;
+    background-color: #8080802e;
+    border-radius: 1rem;
+}
+.res-card:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.res-logo{
+    width: 100%;
+    border-radius: 1rem;
+    height: 115px;
+}
+.res-card > h4{
+    margin: 0px;
+}
+.res-card >h5{
+    margin: 4px;
 }
