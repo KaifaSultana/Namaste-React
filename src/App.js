@@ -1,40 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
+import Header from "./components/Header"
+import Body from "./components/Body"
 
-/*
-Header
- - Logo
- - Nav Items
-Body
- - Search
- - ResturantContainer
-     -ResturantCard
-       -Img
-       -Name of res,rating,cuisine
-Footer
-  - CopyRight
-  - Links
-  - Adderss
-  - Contact
-
-*/
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="logo-container">
-                <img className="logo" src="https://img.freepik.com/free-vector/food-shopping-logo-template-design_460848-10299.jpg" alt="logo"/>
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
 const ResturantCard = (props) => {
   const {resData} = props;
   const {cloudinaryImageId,cuisines,costForTwo,avgRating,sla,name} = resData?.info;
@@ -2215,19 +2183,6 @@ const resObj =  [
         }
       ]
 
-const Body = () => {
-    return (
-        <div className="body">
-            <div className="search">Search</div>
-            <div className="res-container">
-                {resObj.map(restaurant=><ResturantCard resData={restaurant} key={restaurant?.info.id}/>)}
-            
-            
-            </div>
-
-        </div>
-    )
-}  
 
 const AppLayout = () => {
     return ( <div className="app">

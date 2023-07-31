@@ -21,8 +21,10 @@
     padding: 10px;
     margin: 10px;
 }
-.search{
-    padding: 10px;
+.filter-btn{
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
 }
 .res-container{
     display: flex;
@@ -51,5 +53,5 @@
     margin: 0px;
 }
 .res-card >h5{
-    margin: 4px;
+    margin: 6px;
 }
