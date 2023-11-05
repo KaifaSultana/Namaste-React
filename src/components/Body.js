@@ -14,24 +14,25 @@ const Body = () => {
         }
         
     return (
-        <div className="body">
-            <div className="filter">
-                <button className="filter-btn" onClick={() => {
-                    const filteredList = resObj.filter(
-                        (res) =>res.info.avgRating > 4.5
-                    )
-                    setResObj(filteredList);
-                    console.log(resObj);
-                }}>Top rated Resturants</button>
+        // <div className="body">
+        //     <div className="filter">
+        //         <button className="filter-btn" onClick={() => {
+        //             const filteredList = resObj.filter(
+        //                 (res) =>res.info.avgRating > 4.5
+        //             )
+        //             setResObj(filteredList);
+        //             console.log(resObj);
+        //         }}>Top rated Resturants</button>
         
-            </div>
-            <div className="res-container">
-                {resObj1?.map(restaurant=><ResturantCard resData={restaurant} key={restaurant?.info.id}/>)}
+        //     </div>
+        //     <div className="res-container">
+        //         {resObj1?.map(restaurant=><ResturantCard resData={restaurant} key={restaurant?.info.id}/>)}
             
             
-            </div>
+        //     </div>
 
-        </div>
+        // </div>
     )
 }  
 export default Body;
+//checking git working or not
